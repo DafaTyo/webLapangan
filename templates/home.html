@@ -9,7 +9,7 @@
     </a>
     <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
       {% if session.username %}
-        <a href="{{ url_for('userLogout') }}" class="text-white bg-black font-medium border border-black hover:bg-white hover:text-black rounded-lg text-sm px-4 py-1.5 text-center ">Logout</a>
+        <button onclick="confirmLogout('/logout')" class="text-white bg-black font-medium border border-black hover:bg-white hover:text-black rounded-lg text-sm px-4 py-1.5 text-center ">Logout</button>
       {% else %}
         <a href="{{ url_for('userLogin') }}" class="text-black bg-white font-medium border border-black hover:bg-black hover:text-white rounded-lg text-sm px-4 py-1.5 text-center me-3">Masuk</a>
         <a href="{{ url_for('userRegister') }}" class="text-white bg-black font-medium border border-black hover:bg-white hover:text-black rounded-lg text-sm px-4 py-1.5 text-center ">Daftar</a> 
